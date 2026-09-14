@@ -2,10 +2,10 @@ import { Metadata } from "next";
 
 const url = "https://jnicolao.com";
 const icon = "/icons/android-chrome-512x512.png";
-const ogImageUrl = `${url}/images/john.svg`;
+const ogImageUrl = `${url}/images/og.jpg`;
 
 const description =
-  "Justine Nicolao is a Full-stack Software Engineer in Nairobi, Kenya, building web and mobile products with Next.js, React, TypeScript and Flutter.";
+  "Justine Nicolao is a Software Engineer in Nairobi, Kenya, building web and mobile products with Next.js, React, TypeScript and Flutter.";
 
 export const metadata: Metadata = {
   title: "Justine Nicolao | Software Engineer",
@@ -34,10 +34,10 @@ export const metadata: Metadata = {
     images: [
       {
         url: ogImageUrl,
-        width: 331,
-        height: 397,
-        alt: "Justine Nicolao | Software Engineer",
-        type: "image/svg+xml",
+        width: 1200,
+        height: 630,
+        alt: "Justine Nicolao, Software Engineer, Nairobi, Kenya",
+        type: "image/jpeg",
       },
     ],
     locale: "en_US",
@@ -59,16 +59,16 @@ export const metadata: Metadata = {
   icons: {
     icon,
     shortcut: icon,
-    apple: "https://jnicolao.com/icons/apple-touch-icon.png",
+    apple: "/icons/apple-touch-icon.png",
     other: [
       {
         rel: "icon",
-        url: "https://jnicolao.com/icons/favicon-16x16.png",
+        url: "/icons/favicon-16x16.png",
         sizes: "16x16",
       },
       {
         rel: "icon",
-        url: "https://jnicolao.com/icons/favicon-32x32.png",
+        url: "/icons/favicon-32x32.png",
         sizes: "32x32",
       },
     ],
