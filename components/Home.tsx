@@ -44,7 +44,7 @@ export default function Hero() {
         </div>
 
         <div className="mt-4 mb-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="bg-white dark:bg-slate-900 rounded-xl p-6 border border-slate-200 dark:border-slate-800 transition-colors duration-500">
               <div>
                 <h2 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white mb-4 transition-colors duration-500 font-sans">
@@ -195,7 +195,7 @@ export default function Hero() {
                     </svg>
                     <span>X (Twitter)</span>
                   </a>
-                  
+
                   {/* <a
                     href="https://www.youtube.com/@jjouvert"
                     target="_blank"
@@ -223,7 +223,7 @@ export default function Hero() {
         </div>
 
         <section className="mb-8">
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 sm:grid-cols-2">
             <SkillCategory
               title="Frontend Engineering"
               skills={[

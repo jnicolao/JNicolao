@@ -1,6 +1,6 @@
 <img align="right" alt="Coding" width="300" src="https://i.pinimg.com/originals/cd/59/d6/cd59d626dc86397fe45080e6e9c7027d.gif">
 
-**Software Engineer** with 4 years of experience building scalable systems and web applications. <br /> 
+**Software Engineer** with 4 years of experience building scalable systems and web applications. <br />
 I build software that is simple to reason about, reliable in production, and valuable to the people who use it. Currently exploring AI Engineering and decentralized applications.
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=jnicolao&label=Profile%20views&color=0e75b6&style=flat" alt="jnicolao" /> </p>

@@ -20,10 +20,7 @@ export function SkillCategory({ title, skills }: SkillCategoryProps) {
           </h2>
           <div className="space-y-5">
             {skills.map((skill, index) => (
-              <div
-                key={index}
-                className="skill-item"
-              >
+              <div key={index} className="skill-item">
                 <div className="flex items-center mb-2">
                   <span className="w-1.5 h-1.5 bg-indigo-500 mr-2 rounded-sm"></span>
                   <span className="font-medium text-indigo-800 dark:text-indigo-300 text-lg font-sans transition-colors duration-500">

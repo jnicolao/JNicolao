@@ -12,8 +12,8 @@ const inter = Inter({
 export * from "@/components/Metadata";
 
 const personJsonLd = {
-  "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://jnicolao.com/#person",
   name: "Justine Nicolao",
   alternateName: "Justine Bororio",
   jobTitle: "Software Engineer",
@@ -43,6 +43,20 @@ const personJsonLd = {
   ],
 };
 
+const websiteJsonLd = {
+  "@type": "WebSite",
+  "@id": "https://jnicolao.com/#website",
+  name: "Justine Nicolao",
+  alternateName: "Justine",
+  url: "https://jnicolao.com",
+  publisher: { "@id": "https://jnicolao.com/#person" },
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [websiteJsonLd, personJsonLd],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -53,7 +67,7 @@ export default function RootLayout({
       <body className={`${inter.variable} antialiased`}>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <ThemeProvider
           attribute="class"
