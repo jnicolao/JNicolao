@@ -1,18 +1,17 @@
 "use client";
 import Image from "next/image";
 import { ThemeToggle } from "./theme-toggle";
-import { ProjectCard } from "@/components/project-card";
 import { SkillCategory } from "@/components/skill-category";
 
 export default function Hero() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-indigo-50 to-indigo-50 dark:from-gray-900 dark:to-gray-950 px-4 pt-2 dark:shadow-2xl border dark:border-gray-800 transition-all duration-500">
+    <main className="min-h-screen bg-slate-100 dark:bg-slate-950 px-4 pt-2 transition-colors duration-500">
       <div className="max-w-5xl mx-auto">
         <div className="flex items-stretch gap-1.5 sm:gap-3 mt-5 max-w-full sm:pb-1 z-10">
           <div className="relative w-24 sm:w-36 aspect-square flex-shrink-0">
             <Image
               src="/images/photo.jpg"
-              alt="My Picture"
+              alt="Justine Nicolao"
               className="w-full h-auto object-cover rounded-xl transition-opacity duration-400"
               fill
               priority
@@ -22,7 +21,7 @@ export default function Hero() {
 
           <div className="flex-1 min-w-0 flex flex-col justify-between h-full">
             <div className="flex items-start justify-between relative">
-              <h1 className="text-[25px] xs:text-3xl sm:text-5xl font-extrabold leading-tight truncate max-w-full text-wrap min-w-0 dark:text-white transition-colors duration-500 font-sans">
+              <h1 className="text-2xl sm:text-4xl font-extrabold tracking-tight md:tracking-normal leading-tight text-wrap min-w-0 text-slate-950 dark:text-slate-50 transition-colors duration-500 font-sans pt-1">
                 Justine Nicolao
               </h1>
               <div className="flex items-center gap-2">
@@ -32,7 +31,7 @@ export default function Hero() {
 
             <div className="flex-1 flex flex-col justify-center gap-1">
               <div className="flex flex-wrap items-center pl-0.5">
-                <span className="text-sm sm:text-2xl text-indigo-700 dark:text-indigo-400 pb-0.5 font-bold transition-colors duration-300">
+                <span className="text-base sm:text-xl text-indigo-700 dark:text-indigo-400 font-bold pb-0.5 transition-colors duration-300">
                   Software Engineer
                 </span>
               </div>
@@ -46,28 +45,22 @@ export default function Hero() {
 
         <div className="mt-4 mb-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            <div className="backdrop-blur-xl bg-white/40 dark:bg-slate-800/30 rounded-2xl p-5 transition-all duration-300 border border-white/40 dark:border-slate-700/40 shadow-lg hover:shadow-xl relative overflow-hidden group">
-              <div className="absolute inset-0 bg-gradient-to-br from-white/60 to-transparent dark:from-slate-700/30 dark:to-transparent opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
-              <div className="absolute -inset-1 bg-gradient-to-r from-indigo-200/20 via-sky-200/20 to-indigo-200/20 dark:from-indigo-800/20 dark:via-sky-800/20 dark:to-indigo-800/20 rounded-2xl blur opacity-30 group-hover:opacity-40 transition-opacity duration-300"></div>
-              <div className="relative z-10">
-                <h2 className="text-xl font-bold text-black dark:text-white mb-2 transition-colors duration-500 font-sans">
+            <div className="bg-white dark:bg-slate-900 rounded-xl p-6 border border-slate-200 dark:border-slate-800 transition-colors duration-500">
+              <div>
+                <h2 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white mb-4 transition-colors duration-500 font-sans">
                   About
                 </h2>
-                <p className="font-normal text-gray-700 dark:text-gray-200 text-sm md:text-base leading-relaxed transition-colors duration-500 font-sans">
-                  I&apos;m a Software Engineer with 4 years of experience
-                  building reliable, maintainable applications. I enjoy solving
-                  real problems with clean code, and I&apos;m always learning
-                  new tools and practices to get better at what I do. I care
-                  about writing code that not only works well but also makes a
-                  real difference for the people using it.
+                <p className="font-normal text-slate-700 dark:text-slate-300 text-sm md:text-base leading-relaxed transition-colors duration-500 font-sans">
+                  Software Engineer with four years of experience building and
+                  shipping production applications. I care about building
+                  software that is simple to reason about, reliable in
+                  production, and valuable to the people who use it.
                 </p>
               </div>
             </div>
-            <div className="backdrop-blur-xl bg-white/40 dark:bg-slate-800/30 rounded-2xl p-5 transition-all duration-300 border border-white/40 dark:border-slate-700/40 shadow-lg hover:shadow-xl relative overflow-hidden group">
-              <div className="absolute inset-0 bg-gradient-to-br from-white/60 to-transparent dark:from-slate-700/30 dark:to-transparent opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
-              <div className="absolute -inset-1 bg-gradient-to-r from-indigo-200/20 via-sky-200/20 to-indigo-200/20 dark:from-indigo-800/20 dark:via-sky-800/20 dark:to-indigo-800/20 rounded-2xl blur opacity-30 group-hover:opacity-40 transition-opacity duration-300"></div>
-              <div className="relative z-10">
-                <h2 className="text-xl font-bold text-black dark:text-white mb-4 transition-colors duration-500 font-sans">
+            <div className="bg-white dark:bg-slate-900 rounded-xl p-6 border border-slate-200 dark:border-slate-800 transition-colors duration-500">
+              <div>
+                <h2 className="text-xl font-semibold tracking-tight text-slate-950 dark:text-white mb-4 transition-colors duration-500 font-sans">
                   Connect
                 </h2>
                 <div className="grid grid-cols-2 gap-3 pl-2">
@@ -75,7 +68,7 @@ export default function Hero() {
                     href="mailto:bororio96@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 w-fit transition transform duration-500 hover:scale-105 text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white font-sans"
+                    className="flex items-center gap-3 w-fit transition-colors duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white font-sans"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +103,7 @@ export default function Hero() {
                     href="https://www.linkedin.com/in/jnicolao/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 w-fit transition transform duration-500 hover:scale-105 text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white font-sans"
+                    className="flex items-center gap-3 w-fit transition-colors duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white font-sans"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +128,7 @@ export default function Hero() {
                     href="https://github.com/JNicolao"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 w-fit transition transform duration-500 hover:scale-105 text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white font-sans"
+                    className="flex items-center gap-3 w-fit transition-colors duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white font-sans"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -158,30 +151,10 @@ export default function Hero() {
                     <span>GitHub</span>
                   </a>
                   <a
-                    href="https://x.com/jnicolao5"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 w-fit transition transform duration-500 hover:scale-105 text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white font-sans"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 1200 1227"
-                    >
-                      <path
-                        d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"
-                        fill="#000000"
-                        className="dark:fill-white"
-                      />
-                    </svg>
-                    <span>X (Twitter)</span>
-                  </a>
-                  <a
                     href="https://medium.com/@jnicolao"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 w-fit transition transform duration-500 hover:scale-105 text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-white font-sans"
+                    className="flex items-center gap-3 w-fit transition-colors duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white font-sans"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -201,6 +174,48 @@ export default function Hero() {
                     </svg>
                     <span>Medium</span>
                   </a>
+                  <a
+                    href="https://x.com/jnicolao5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 w-fit transition-colors duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white font-sans"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 1200 1227"
+                      className="mx-0.5"
+                    >
+                      <path
+                        d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"
+                        fill="#000000"
+                        className="dark:fill-white"
+                      />
+                    </svg>
+                    <span>X (Twitter)</span>
+                  </a>
+                  
+                  {/* <a
+                    href="https://www.youtube.com/@jjouvert"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 w-fit transition-colors duration-200 text-slate-600 dark:text-slate-300 hover:text-slate-950 dark:hover:text-white font-sans"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="#FF0000"
+                        d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8z"
+                      />
+                      <path fill="#FFFFFF" d="M9.6 15.6V8.4l6.2 3.6-6.2 3.6z" />
+                    </svg>
+                    <span>YouTube</span>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -208,63 +223,36 @@ export default function Hero() {
         </div>
 
         <section className="mb-8">
-          <div className="flex items-center gap-2 mb-4">
-            <span className="w-1.5 h-1.5 bg-indigo-500"></span>
-            <h2 className="text-sm font-medium tracking-wide uppercase text-indigo-700 dark:text-indigo-400 font-sans transition-colors duration-500">
-              Skills
-            </h2>
-          </div>
           <div className="grid gap-6 md:grid-cols-2">
             <SkillCategory
               title="Frontend Engineering"
               skills={[
                 {
-                  name: "React",
+                  name: "React & Next.js",
                   subskills: [
                     "React 19",
-                    "Hooks",
+                    "App Router",
                     "Server Components",
-                    "Context API",
+                    "SSR / SSG / ISR",
+                    "API Routes",
                     "State Management",
                     "Reusable Component Systems",
                   ],
                 },
                 {
-                  name: "Next.js",
-                  subskills: [
-                    "App Router",
-                    "SSR",
-                    "SSG",
-                    "ISR",
-                    "API Routes",
-                    "Middleware",
-                    "Image Optimisation",
-                  ],
-                },
-                {
-                  name: "TypeScript & JavaScript",
-                  subskills: [
-                    "TypeScript",
-                    "ES6+",
-                    "Type-Safe APIs",
-                    "Async/Await",
-                    "DOM APIs",
-                  ],
+                  name: "TypeScript",
+                  subskills: ["Type-Safe APIs", "Modern JavaScript"],
                 },
                 {
                   name: "Flutter & Dart",
-                  subskills: ["Cross-platform Mobile Apps", "Dart"],
+                  subskills: ["Cross-platform Mobile Apps"],
                 },
                 {
                   name: "Styling & UI",
                   subskills: [
                     "Tailwind CSS 4",
-                    "Responsive Design",
-                    "Semantic HTML",
-                    "CSS3",
-                    "Flexbox",
-                    "Grid",
                     "SASS/SCSS",
+                    "Responsive Design",
                     "Design Systems",
                     "Figma",
                   ],
@@ -282,7 +270,6 @@ export default function Hero() {
                     "React Testing Library",
                     "Cypress",
                     "Test-Driven Development",
-                    "Component & E2E Testing",
                   ],
                 },
                 {
@@ -299,19 +286,19 @@ export default function Hero() {
                   subskills: [
                     "XSS Prevention",
                     "CSP Headers",
-                    "Secure Cookie Handling",
-                    "Token Storage",
+                    "Secure Cookie & Token Handling",
                     "JWT Authentication",
                   ],
                 },
                 {
-                  name: "Performance",
+                  name: "Performance & SEO",
                   subskills: [
                     "Code Splitting",
-                    "Lazy Loading",
-                    "Image Optimisation",
                     "Bundle Analysis",
                     "Core Web Vitals",
+                    "Lighthouse Audits",
+                    "Metadata & Open Graph",
+                    "Structured Data",
                   ],
                 },
               ]}
@@ -322,24 +309,18 @@ export default function Hero() {
               skills={[
                 {
                   name: "Node.js",
-                  subskills: [
-                    "Express",
-                    "REST APIs",
-                    "JWT",
-                    "Authentication",
-                    "Middleware",
-                  ],
+                  subskills: ["Express", "REST APIs", "Authentication"],
                 },
                 {
                   name: "Python",
-                  subskills: ["Django", "Flask", "Scripting", "Automation"],
+                  subskills: ["Django", "Flask"],
                 },
                 {
                   name: "Databases",
                   subskills: [
-                    "MongoDB",
                     "PostgreSQL",
                     "MySQL",
+                    "MongoDB",
                     "Redis",
                     "Supabase",
                     "Firebase",
@@ -349,11 +330,11 @@ export default function Hero() {
             />
 
             <SkillCategory
-              title="Tools, Platforms & Practices"
+              title="Platforms & Practices"
               skills={[
                 {
                   name: "Build Tooling",
-                  subskills: ["Turbopack", "Webpack", "Vite", "npm"],
+                  subskills: ["Turbopack", "Webpack", "Vite"],
                 },
                 {
                   name: "Cloud & DevOps",
@@ -361,19 +342,19 @@ export default function Hero() {
                     "AWS",
                     "Azure",
                     "Docker",
-                    "CI/CD",
+                    "Sentry",
                     "GitHub Actions",
                     "Vercel",
+                    "Jenkins",
+                    "NGINX",
                   ],
                 },
                 {
-                  name: "Collaboration & Practices",
+                  name: "Engineering Practices",
                   subskills: [
-                    "Git",
-                    "GitHub",
                     "Code Reviews",
                     "Agile & Scrum",
-                    "Documentation",
+                    "Technical Documentation",
                     "Mentoring",
                   ],
                 },
@@ -382,61 +363,7 @@ export default function Hero() {
           </div>
         </section>
 
-        <section id="projects" className="mb-8">
-          <div className="flex items-center gap-2 mb-4">
-            <span className="w-1.5 h-1.5 bg-indigo-500"></span>
-            <h2 className="text-sm font-medium tracking-wide uppercase text-indigo-700 dark:text-indigo-400 font-sans transition-colors duration-500">
-              Selected Work
-            </h2>
-          </div>
-
-          <div className="grid gap-4 lg:grid-cols-3">
-            <ProjectCard
-              title="PickSend"
-              org="PickSpot Network"
-              period="2024 — Present"
-              status="In production"
-              problem="Merchants sending parcels had no single place to register a shipment, hand it off, and see where it was — coordination ran on phone calls and spreadsheets."
-              role="Frontend lead"
-              stack={["Next.js", "React", "TypeScript"]}
-              outcomes={[
-                "Merchants register parcels and follow them through to delivery from one dashboard, replacing ad-hoc coordination.",
-                "The same platform runs the internal portals operations staff use to manage dispatch and support day to day.",
-                "Merchant-facing surfaces hold above 90% user satisfaction in production.",
-              ]}
-            />
-            <ProjectCard
-              title="Battery Inventory System"
-              org="eWAKA Mobility"
-              period="2024"
-              status="Deployed"
-              problem="Battery swaps across franchises were logged by hand, so inventory counts drifted from reality and errors surfaced days late."
-              role="Engineer"
-              stack={["Next.js", "TypeScript", "Node.js"]}
-              outcomes={[
-                "Administrators control battery swaps electronically and monitor locations in real time across every franchise.",
-                "Cut tracking errors by 35% by replacing manual logs with one centralized platform.",
-                "Slotted into existing fleet-management workflows instead of forcing new ones.",
-              ]}
-            />
-            <ProjectCard
-              title="Murmur"
-              org="Personal Project"
-              period="2025 — Present"
-              status="In development"
-              problem="Journaling apps assume you want to type; most people process feelings by talking. Murmur is a space for your inner voice."
-              role="Design & build"
-              stack={["Flutter", "Next.js", "TypeScript", "OpenAI", "Supabase"]}
-              outcomes={[
-                "Speak instead of write — real-time voice-to-chat conversation that listens, transcribes, and responds as you talk.",
-                "Emotional awareness built in: mood and sentiment are tracked over time so patterns surface, not just entries.",
-                "One product, two surfaces — a web app and a Flutter mobile app, designed voice-first from the ground up.",
-              ]}
-            />
-          </div>
-        </section>
-
-        <div className="mt-12 mb-6">
+        <div className="py-6">
           <p className="text-center text-sm text-gray-800 dark:text-gray-300 transition-colors duration-300">
             &copy; {new Date().getFullYear()} • Justine Nicolao • All Rights
             Reserved
